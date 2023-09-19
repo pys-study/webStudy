@@ -17,6 +17,7 @@ public class StudyController {
         return "hello";
     }
 
+    // mvc 방식
     @GetMapping("hello-mvc")
     public String helloMvc(@RequestParam("name") String name, Model model){
         model.addAttribute("name", name);
