@@ -112,3 +112,26 @@ REST API 설계 및 리소스에 대한 GET, POST 메소드 구현에 대해 이
 - 상위 컴포넌트 메소드 호출을 통해 기존의 버튼마다 따로 가지던 카운터 state를 제거하고 하나의 state로 통일
 
 # 2주차
+카운터 앱 일부 리팩토링
+- 단순히 상위 메소드를 호출하기만 하는 하위 메소드를 삭제하고 직접 상위 메소드를 호출하도록 변경
+- onClick 메소드에 arrow function으로 props 값 by를 넘겨 줌
+- CounterButton에 있는 사용하지 않는 state 제거
+
+Spring Boot와 React를 이용한 풀 스택 Todo App 작성
+
+### 풀 스택 (Spring Boot + React) Todo App 구현
+
+<pre><code>
+1. 로그인 컴포넌트 작성
+2. 로그인 인증 구현
+</code></pre>
+### 1. 로그인 컴포넌트 작성
+- useState()를 이용해 입력 값을 저장
+- 각 Label의 기본값을 value 프로퍼티로 지정하고, onChange 프로퍼티를 통해 변경이 발생할 때마다 이벤트 함수를 실행함
+- 이벤트 함수 handleUsernameChange는 useState의 setUsername을 호출하고 state를 변경(username), 패스워드 또한 같은 방식으로 처리함
+- event.target.value에 변경된 state 값이 들어 있음
+
+### 2. 로그인 인증 구현
+- 임시로 하드코딩을 통해 인증 구현
+- showSuccessMessage, showErrorMessage와 각각 AND 연산을 통해 로그인 성공, 실패 메세지 출력
+
