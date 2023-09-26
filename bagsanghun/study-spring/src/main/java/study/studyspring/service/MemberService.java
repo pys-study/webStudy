@@ -1,5 +1,7 @@
 package study.studyspring.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import study.studyspring.domain.Member;
 import study.studyspring.repository.MemberRepository;
 import study.studyspring.repository.MemoryMemberRepository;
@@ -7,10 +9,12 @@ import study.studyspring.repository.MemoryMemberRepository;
 import java.util.List;
 import java.util.Optional;
 
+
 public class MemberService {
 
     private final MemberRepository memberRepository;
 
+    //@Autowired // MemberRepository가 필요하므로 스프링이 컨테이너에 넣어준다.(@Autowired가 있어야 하는 이유)
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
