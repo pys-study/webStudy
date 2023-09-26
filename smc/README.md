@@ -68,3 +68,47 @@ REST API 설계 및 리소스에 대한 GET, POST 메소드 구현에 대해 이
 카운터 예제를 통해 React의 구조와 React 컴포넌트들의 동작 방식에 대해 확인함.
 
 ### 카운터 예제 작성
+<pre><code>1. Create React App 구조 확인
+2. React 컴포넌트 생성 및 state
+3. 컴포넌트 모듈 리팩토링
+4. JSX를 이용한 뷰 작성
+5. state와 props를 이용한 Counter 및 CounterButton 구성
+6. 상위 컴포넌트 메소드 호출
+</code></pre>
+### 1. Create React App 구조 확인
+- node.js 환경에서 구현
+- npm(pakage manager)를 이용해 필요한 패키지 설치
+- npx(pakage executer)를 이용해 필요한 패키지 실행
+- 대상 폴더에서 npm start 명령어를 통해 react app 실행
+
+### 2. React 컴포넌트 생성 및 state
+- App.js 파일에서 함수 형태(function으로 선언)로 컴포넌트 생성
+- html 코드(또는 jsx)를 반환 -> return ()
+- 함수 컴포넌트와 클래스 컴포넌트 두 종류로 구분
+- state를 사용하기 위해 클래스 컴포넌트를 사용했으나, 16.8버전 이후 함수 컴포넌트도 state를 지원함
+- state는 컴포넌트의 상태 변화를 나타냄
+
+### 3. 컴포넌트 모듈 리팩토링
+- 각 컴포넌트는 각자 다른 모듈에 존재하는 것이 바람직함
+- App.js에 작성했던 함수 컴포넌트를 모두 분리해서 jsx파일로 작성
+- import FirstComponent from './FirstComponent' 와 같이 임포트 문 작성
+- 함수 앞에 export default 선언을 통해 import시 내보내는 기본 함수를 선언해야 함
+- 함수 앞에 export 선언을 해야 모듈에서 함수 컴포넌트를 내보낼 수 있음
+
+### 4. jsx를 이용한 뷰 작성
+- jsx는 javascript에 xml를 추가한 버전
+- 리액트로 프로젝트를 작성하는 데 사용됨
+- 구 버전 브라우저에서도 javascript를 이해할 수 있도록 함
+
+### 5. state와 props를 이용한 Counter 및 CounterButton 구성
+- state를 이용해 Counter 숫자를 업데이트
+- setCounter 함수 인자 값을 버튼 입력에 따라 조정
+- props를 이용해 버튼의 프로퍼티 설정
+- 현재 프로그램에서는 by 프로퍼티를 통해 증감 숫자의 크기를 조정
+- propTypes를 통해 프로퍼티의 타입을 지정
+- defaultProps를 통해 프로퍼티의 기본값을 지정
+
+### 6. 상위 컴포넌트 메소드 호출
+- 상위 컴포넌트 메소드 호출을 통해 기존의 버튼마다 따로 가지던 카운터 state를 제거하고 하나의 state로 통일
+
+# 2주차
