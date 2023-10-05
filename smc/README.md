@@ -135,3 +135,25 @@ Spring Boot와 React를 이용한 풀 스택 Todo App 작성
 - 임시로 하드코딩을 통해 인증 구현
 - showSuccessMessage, showErrorMessage와 각각 AND 연산을 통해 로그인 성공, 실패 메세지 출력
 
+# 3주차
+Spring Boot와 React를 이용한 풀 스택 Todo App 작성(계속)
+
+<pre><code>
+1. React Router DOM으로 다른 컴포넌트로 라우팅
+2. 에러 컴포넌트 추가
+3. 하드코딩 리팩토링
+</code></pre>
+### 1. React Router DOM으로 다른 컴포넌트로 라우팅
+- npm install react-router-dom
+- BrouserRouter, Routes, Route path='' element={}를 통해 주소와 라우팅할 컴포넌트를 지정
+- useNavigate()를 통해 다른 컴포넌트로 라우팅
+
+### 2. 에러 컴포넌트 추가
+- 존재하지 않는 URL을 입력했을 경우 path='*'로 지정하고 에러 컴포넌트를 지정
+- 각 컴포넌트에 h1태그를 통해 제목 지정
+
+### 3. 하드코딩 리팩토링
+- useParams hook를 통해 파라미터를 받아옴
+- 파라미터를 이용해 필요한 값을 출력
+- login 컴포넌트에서 navigate(`/welcome/${username}`) 코드를 통해 username 변수를 넘겨줌
+- welcome 컴포넌트에서 useParams()를 통해 url의 경로 파라미터로 받아온 username을 출력
