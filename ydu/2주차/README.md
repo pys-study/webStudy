@@ -19,7 +19,9 @@
 
 이후 연산자와 피연산자를 저장할 변수를 설정하고, 어떻게 계산할지 생각한다.
 
-#### 고차 함수 사용하기
+<br>
+
+### 고차 함수 사용하기
 
 - 함수를 호출할 때마다 반환 함수를 생성하는 함수를 고차함수(high order function) 이라고 한다.
   <pre><code>const func = () => {
@@ -32,7 +34,21 @@
   <pre><code>const innerFunc = func();
   innerFunc(); // hello </code></pre>
 
-#### eval 사용하기
+- 반환하는 값을 바꾸고 싶을 때는 매개변수를 사용한다.
+  <pre><code>const func = (msg) => {
+    return () => {
+      console.log(msg);
+    };
+  };</code></pre>
+
+- 화살표 함수 문법에 따라 함수의 본문에서 바로 반환되는 값이 존재하면 { } 와 return 을 생략할 수 있다.
+  <pre><code>const func = (msg) => () => {
+    console.log(msg);
+  };</code></pre>
+
+<br>
+
+### eval 사용하기
 
 - 일반적으로 문자열을 연산자로 바꿀 수 없지만, 문자열을 자바스크립트 코드처럼 실행하는 방법이 있다.
 
