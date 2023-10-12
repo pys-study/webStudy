@@ -142,6 +142,7 @@ Spring Boot와 React를 이용한 풀 스택 Todo App 작성(계속)
 1. React Router DOM으로 다른 컴포넌트로 라우팅
 2. 에러 컴포넌트 추가
 3. 하드코딩 리팩토링
+4. 할 일 목록 컴포넌트 생성
 </code></pre>
 ### 1. React Router DOM으로 다른 컴포넌트로 라우팅
 - npm install react-router-dom
@@ -157,3 +158,9 @@ Spring Boot와 React를 이용한 풀 스택 Todo App 작성(계속)
 - 파라미터를 이용해 필요한 값을 출력
 - login 컴포넌트에서 navigate(`/welcome/${username}`) 코드를 통해 username 변수를 넘겨줌
 - welcome 컴포넌트에서 useParams()를 통해 url의 경로 파라미터로 받아온 username을 출력
+
+### 4. 할 일 목록 컴포넌트 생성
+- 각 할 일을 JSX 표현식으로 매핑(배열에 map 함수 사용)
+- 테이블을 생성해 출력함 (<table> 태그)
+- welcome 페이지와 todos 페이지를 연결
+- 하이퍼링크에서 a 태그 대신 React DOM의 Link 태그를 사용해 페이지 전체를 새로고침하지 않고 특정 컴포넌트만 새로고침 하게 함
