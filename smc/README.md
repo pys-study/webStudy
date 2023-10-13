@@ -143,6 +143,7 @@ Spring Boot와 React를 이용한 풀 스택 Todo App 작성(계속)
 2. 에러 컴포넌트 추가
 3. 하드코딩 리팩토링
 4. 할 일 목록 컴포넌트 생성
+5. 헤더, 바닥글, 로그아웃 컴포넌트 추가
 </code></pre>
 ### 1. React Router DOM으로 다른 컴포넌트로 라우팅
 - npm install react-router-dom
@@ -164,3 +165,7 @@ Spring Boot와 React를 이용한 풀 스택 Todo App 작성(계속)
 - 테이블을 생성해 출력함 (<table> 태그)
 - welcome 페이지와 todos 페이지를 연결
 - 하이퍼링크에서 a 태그 대신 React DOM의 Link 태그를 사용해 페이지 전체를 새로고침하지 않고 특정 컴포넌트만 새로고침 하게 함
+
+### 5. 헤더, 바닥글, 로그아웃 컴포넌트 추가
+- <hr/>, </hr> 태그를 통해 헤더, 바닥글 추가
+- 로그아웃 컴포넌트 추가(/logout url로 접근)
