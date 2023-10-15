@@ -65,4 +65,44 @@ $form.addEventListener('submit', (event) => {
   }
   // 몇스트라이크 몇 볼인지 검사
 
+  let strike = 0;
+  let ball = 0;
+
+  // 1. for문으로 구현
+  // for (let i = 0; i < answer.length; i++) {
+  //   const index = value.indexOf(answer[i]); // indexOf는 JavaScript 배열에서 특정 값의 인덱스(위치)를 찾는 메서드입니다.
+  //   // ex) '2345'.indexOf(1) 일경우 -1 반환
+
+  //   if (index > -1) {// 일치하는 숫자 발견
+  //     if (index === i) // 인덱스 위치 같음
+  //     {
+  //       strike += 1;
+  //     } else { // 숫자만 같음
+  //       ball += 1;
+  //     }
+  //   }
+  // }
+
+  // 2.foreach문으로 구현
+  answer.forEach((number, index) => {
+    const idx = value.indexOf(number);
+    console.log(typeof (number))
+    if (idx > -1) // 일치하는 값이 존재 
+    {
+      if (idx === index) {
+        strike += 1;
+      } else {
+        ball += 1;
+      }
+    }
+  });
+
+
+  $logs.append(`${value}: ${strike} 스트라이크 ${ball} 볼`, document.createElement('br'));
+  tries.push(value);
+  // 홈런 메세지 표시하기
+  // 기존 $log 태그의 내용을 유지하면서 추가로 다음 줄에 기록을 남기려면 document.createTextNode로 먼저 텍스트를 만들고 ,
+  // appendChild 로 화면에 추가해야 한다. textContent를 사용할 경우 기존 내용이 사라진다.
+
+
 });
