@@ -1,4 +1,4 @@
-const candidate = Array(45).fill().map((v, i) => i + 1);
+const candidate = Array(45).fill().map((el, i) => i + 1);
 // 1에서 45까지의 숫자
 
 // 45개의 숫자 섞기
@@ -14,3 +14,31 @@ while (candidate.length > 0) {
   const value = spliceArray[0]; // 뽑아낸 값
   suffle.push(value); // 빈 배열에 삽입
 }
+
+const winBalls = suffle.slice(0, 6).sort((a, b) => a - b);
+const bonus = suffle[6];
+console.log(winBalls, bonus);
+
+const $result = document.querySelector("#result");
+const $bonus = document.querySelector("#bonus");
+
+
+drawBall = (number, $parent) => {
+  const $ball = document.createElement('div'); // 태그 직접 만들기
+  $ball.className = "ball"; // 태그의 클래스 이름 설정
+  $ball.textContent = number;
+  $parent.appendChild($ball); // append 와 appendChild의 차이점 ?
+};
+
+
+for (let i = 0; i < winBalls.length; i++) {
+  setTimeout(() => {
+    drawBall(suffle[i], $result);
+  }, (i + 1) * 1000);
+}
+
+console.log(bonus);
+
+setTimeout(() => {
+  drawBall(bonus, $bonus);
+}, 7000);
