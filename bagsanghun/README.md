@@ -107,3 +107,12 @@ intellij 설치 이후 컴파일 되지 않던 오류 수정. 파일 경로에 �
 - 3. PRIMARY KEY: PRIMARY KEY 제약 조건은 열 이름 뒤에 정의되어야 한다.
 이렇게 수정된 SQL 문을 실행하면 member 테이블이 생성될 것
 
+# 5주차
+
+- jdbc 관련 학습
+- build.gradle 파일의 dependencies 내에 다음 두 줄 추가
+<pre><code>implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+	runtimeOnly 'com.h2database:h2'
+</code></pre>
+- Repository 폴더 내에 jdbcMemberRepository 클래스 생성
+- 위의 작업들은 모두 db와 연결시키기 위한 작업
