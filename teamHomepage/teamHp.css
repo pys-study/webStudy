@@ -6,7 +6,6 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-
 /*header*/
 #header {
   position: fixed;
@@ -19,6 +18,8 @@ body::-webkit-scrollbar {
   font-size: 18px;
   /* border-bottom: 1px solid #e0e3fd; */
   z-index: 10;
+  height: 100px;
+  /* 헤더의 높이를 지정합니다. */
 }
 
 .scroll-bar {
@@ -42,14 +43,16 @@ body::-webkit-scrollbar {
   /* 움직임을 부드럽게 만들기 위한 트랜지션 */
 }
 
+/* about 섹션*/
 
-h1 {
-  margin: 0;
+.section-about h2 {
+  margin: 0 auto 100px;
+  display: inline-block;
+  font-family: "GmarketBold";
+  color: #6a75ca;
+  font-size: 40px;
 }
 
-/* .team-members {
-  margin: 50px;
-} */
 
 .section-about {
   display: flex;
@@ -57,7 +60,8 @@ h1 {
   flex-direction: column;
   background-color: white;
   padding: 80px 0 100px 0;
-  margin: 0 0 100px 0;
+  margin-top: 100px;
+  /* 헤더의 높이만큼 margin-top을 추가하여 겹치지 않도록 합니다. */
 }
 
 .section-about h2 {
