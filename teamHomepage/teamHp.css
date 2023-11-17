@@ -21,7 +21,26 @@ body::-webkit-scrollbar {
   z-index: 10;
 }
 
+.scroll-bar {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #dfe2f7;
+}
 
+.scroll-ing {
+  position: absolute;
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #6a75ca;
+  width: 0%;
+  /* 초기 width를 0%로 설정 */
+  transition: width 0.2s;
+  /* 움직임을 부드럽게 만들기 위한 트랜지션 */
+}
 
 
 h1 {
