@@ -1,22 +1,76 @@
-
 body {
   font-family: Arial, sans-serif;
 }
 
-header {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
+body::-webkit-scrollbar {
+  display: none;
 }
+
+
+/*header*/
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 45px 60px;
+  background-color: white;
+  color: #6a75ca;
+  font-size: 18px;
+  /* border-bottom: 1px solid #e0e3fd; */
+  z-index: 10;
+}
+
+
+
 
 h1 {
   margin: 0;
 }
 
-.team-members {
-  margin: 20px;
+/* .team-members {
+  margin: 50px;
+} */
+
+.section-about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 80px 0 100px 0;
+  margin: 0 0 100px 0;
 }
+
+.section-about h2 {
+  margin: 0 auto 100px;
+  display: inline-block;
+  font-family: "GmarketBold";
+  color: #6a75ca;
+  font-size: 40px;
+}
+
+.cont-about {
+  display: flex;
+  margin: 0 auto;
+}
+
+/*======*/
+
+
+
+.slide-container {
+  width: 438px;
+  margin: 0 auto;
+}
+
+.slide-images {
+  position: relative;
+  display: flex;
+  height: 438px;
+}
+
+
+/* ==================================== */
 
 .member {
   display: inline-block;
@@ -73,4 +127,25 @@ td {
   top: 10px;
   right: 10px;
   cursor: pointer;
+}
+
+/* top 버튼 */
+
+.btn-moveTop {
+  position: fixed;
+  right: 60px;
+  bottom: 60px;
+  width: 65px;
+  height: 65px;
+  background-image: url(images/topButton.png);
+  background-color: transparent;
+  background-size: 100% 100%;
+  /* 배경 이미지 크기를 버튼 크기와 동일하게 설정 */
+  border: none;
+  cursor: pointer;
+}
+
+.btn-moveTop:hover {
+  background-image: url(images/topButton_hover.png);
+  transition: 0.5s ease-out;
 }

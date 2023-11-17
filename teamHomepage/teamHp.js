@@ -18,3 +18,9 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('입력값:', inputField.value);
   });
 });
+
+// top 버튼
+let moveToTop = function () {
+  document.body.scrollIntoView({ behavior: "smooth" });
+};
+

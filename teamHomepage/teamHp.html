@@ -1,65 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="teamHp.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="teamHp.css" />
     <title>팀 홈페이지</title>
-</head>
-<body>
-    <header>
-        <h1>웹프로그래밍</h1>
+  </head>
+
+  <body>
+    <header id="header">
+      <h1>웹프로그래밍</h1>
     </header>
-    <section class="team-members">
-        <h2>팀원 소개</h2>
-        <div class="member">
-            <img src="박상훈 프로필사진.png" alt="팀원 1">
-            <p>팀원 1 소개 내용...</p>
+
+    <section class="section-about">
+      <a name="about"></a>
+      <h2>팀원 소개</h2>
+      <div class="cont-about">
+        <div class="slide-container">
+          <div class="slide-album">
+            <div class="slide-images">
+              <img
+                src="images/윤도운 프로필사진.jpg"
+                alt="윤도운"
+                width="330"
+                height="438"
+              />
+            </div>
+            <button class="btn-next">▶</button>
+            <button class="btn-prev">◀</button>
+          </div>
         </div>
-        <div class="member">
-            <img src="윤도운 프로필사진.jpg" alt="팀원 2">
-            <p>팀원 2 소개 내용...</p>
+
+        <div class="info-about">
+          <dl class="txt-about">
+            <div>
+              <dt>이름</dt>
+              <dd>윤도운</dd>
+            </div>
+            <div>
+              <dt>생년월일</dt>
+              <dd>00.09.24</dd>
+            </div>
+            <div>
+              <dt>거주지</dt>
+              <dd>부산시 동구</dd>
+            </div>
+            <div>
+              <dt>학교/전공</dt>
+              <dd>동의대학교/컴퓨터공학과</dd>
+            </div>
+          </dl>
+          <div class="btn-about">
+            <button class="btn-open" type="button">
+              <img src="src/img/icon-diary.png" alt="" />자세히
+            </button>
+          </div>
         </div>
-        <div class="member">
-            <img src="신민철 프로필사진.jpg" alt="팀원 3">
-            <p>팀원 3 소개내용...</p>
-        </div>
+      </div>
     </section>
+
+    <section class="section-about">
+      <a name="about"></a>
+      <h2>팀원 소개</h2>
+      <div class="cont-about">
+        <div class="slide-container">
+          <div class="slide-album">
+            <div class="slide-images">
+              <img
+                src="images/박상훈 프로필사진.jpg"
+                alt="박상훈"
+                width="330"
+                height="438"
+              />
+            </div>
+            <button class="btn-next">▶</button>
+            <button class="btn-prev">◀</button>
+          </div>
+        </div>
+
+        <div class="info-about">
+          <dl class="txt-about">
+            <div>
+              <dt>이름</dt>
+              <dd>박상훈</dd>
+            </div>
+            <div>
+              <dt>생년월일</dt>
+              <dd>00.00.00</dd>
+            </div>
+            <div>
+              <dt>거주지</dt>
+              <dd>부산시 00</dd>
+            </div>
+            <div>
+              <dt>학교/전공</dt>
+              <dd>동의대학교/컴퓨터공학과</dd>
+            </div>
+          </dl>
+          <div class="btn-about">
+            <button class="btn-open" type="button">
+              <img src="src/img/icon-diary.png" alt="" />자세히
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-about">
+      <a name="about"></a>
+      <h2>팀원 소개</h2>
+      <div class="cont-about">
+        <div class="slide-container">
+          <div class="slide-album">
+            <div class="slide-images">
+              <img
+                src="images/신민철 프로필사진.jpg"
+                alt="신민철"
+                width="330"
+                height="438"
+              />
+            </div>
+            <button class="btn-next">▶</button>
+            <button class="btn-prev">◀</button>
+          </div>
+        </div>
+
+        <div class="info-about">
+          <dl class="txt-about">
+            <div>
+              <dt>이름</dt>
+              <dd>신민철</dd>
+            </div>
+            <div>
+              <dt>생년월일</dt>
+              <dd>00.00.00</dd>
+            </div>
+            <div>
+              <dt>거주지</dt>
+              <dd>부산시 00</dd>
+            </div>
+            <div>
+              <dt>학교/전공</dt>
+              <dd>동의대학교/컴퓨터공학과</dd>
+            </div>
+          </dl>
+          <div class="btn-about">
+            <button class="btn-open" type="button">
+              <img src="src/img/icon-diary.png" alt="" />자세히
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="team-goals">
-        <h2>팀 목표</h2>
-        <p>우리 팀의 목표는 XXX입니다.</p>
+      <h2>팀 목표</h2>
+      <p>우리 팀의 목표는 XXX입니다.</p>
     </section>
+
     <section class="learning-process">
-        <h2>학습 과정</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>날짜</th>
-                    <th>학습 주제</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>2023-11-01</td>
-                    <td>HTML 기초</td>
-                </tr>
-                <tr>
-                    <td>2023-11-05</td>
-                    <td>CSS 스타일링</td>
-                </tr>
-                <!-- 다른 학습 주제 추가 -->
-            </tbody>
-        </table>
+      <h2>학습 과정</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>날짜</th>
+            <th>학습 주제</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2023-11-01</td>
+            <td>HTML 기초</td>
+          </tr>
+          <tr>
+            <td>2023-11-05</td>
+            <td>CSS 스타일링</td>
+          </tr>
+          <!-- 다른 학습 주제 추가 -->
+        </tbody>
+      </table>
     </section>
+
     <button id="popupButton">팝업 열기</button>
     <div id="popup" class="popup">
-        <div class="popup-content">
-            <span class="popup-close" id="popupCloseButton">&times;</span>
-            <h2>팝업 창</h2>
-            <p>팝업 창 내용...</p>
-            <input type="text" id="inputField" placeholder="입력하세요">
-        </div>
+      <div class="popup-content">
+        <span class="popup-close" id="popupCloseButton">&times;</span>
+        <h2>팝업 창</h2>
+        <p>팝업 창 내용...</p>
+        <input type="text" id="inputField" placeholder="입력하세요" />
+      </div>
     </div>
+    <button onclick="moveToTop()" class="btn-moveTop"></button>
     <script src="teamHp.js"></script>
-</body>
+  </body>
 </html>
