@@ -177,11 +177,11 @@ body::-webkit-scrollbar {
   font-size: 22px;
 }
 
-.detailButton {
+.infoButton {
   margin: 45px 0 0 20px;
 }
 
-.detailButton button {
+.infoButton button {
   width: 140px;
   height: 140px;
   margin: 0 45px 0 0;
@@ -192,7 +192,7 @@ body::-webkit-scrollbar {
   font-size: 18px;
 }
 
-.detailButton button:hover {
+.infoButton button:hover {
   cursor: pointer;
   background-color: #c4c8f1;
   color: #868ecf;
@@ -200,11 +200,38 @@ body::-webkit-scrollbar {
   transition: 0.5s ease-out;
 }
 
-.detailButton button img {
+.infoButton button img {
   width: 43px;
   margin: 10px auto;
 }
 
+.githubButton {
+  margin: 45px 0 0 200px;
+}
+
+.githubButton button {
+  width: 140px;
+  height: 140px;
+  margin: 0 45px 0 0;
+  border-radius: 100%;
+  background-color: #6a75ca;
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+
+.githubButton button:hover {
+  cursor: pointer;
+  background-color: #c4c8f1;
+  color: #868ecf;
+  /* border: 2px solid #6a75ca; */
+  transition: 0.5s ease-out;
+}
+
+.githubButton button img {
+  width: 43px;
+  margin: 10px auto;
+}
 
 /*======*/
 
