@@ -177,6 +177,11 @@ body::-webkit-scrollbar {
   font-size: 22px;
 }
 
+.text-with-button-container {
+  display: flex; /* 텍스트와 버튼을 가로로 배치하기 위해 flex 사용 */
+  align-items: center; /* 세로 중앙 정렬 */
+}
+
 .infoButton {
   margin: 45px 0 0 20px;
 }
@@ -352,6 +357,9 @@ td {
   border-radius: 10px;
   text-align: center;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  max-height: 70%;
+  overflow-y: auto;
+  scrollbar-color: #6a75ca;
 }
 
 .modal h3 {

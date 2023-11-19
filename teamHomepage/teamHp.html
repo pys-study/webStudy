@@ -91,11 +91,11 @@
             </div>
             <div>
               <dt>생년월일</dt>
-              <dd>00.00.00</dd>
+              <dd>00.10.16</dd>
             </div>
             <div>
               <dt>거주지</dt>
-              <dd>부산시 00</dd>
+              <dd>부산시 사상구</dd>
             </div>
             <div>
               <dt>학교/전공</dt>
@@ -140,11 +140,11 @@
             </div>
             <div>
               <dt>생년월일</dt>
-              <dd>00.00.00</dd>
+              <dd>00.09.19</dd>
             </div>
             <div>
               <dt>거주지</dt>
-              <dd>부산시 00</dd>
+              <dd>부산시 사상구</dd>
             </div>
             <div>
               <dt>학교/전공</dt>
@@ -163,10 +163,20 @@
       </div>
     </section>
 
+
+    <div class="text-with-button-container">
     <section class="team-goals">
       <h2>팀 목표</h2>
-      <p>우리 팀의 목표는 XXX입니다.</p>
+      <p>우리 팀의 목표는 웹프로그래밍 과목 전원 A+입니다.</p>
     </section>
+    <div class="infoButton">
+      <button class="detailButton" data-modal="modal4" type="button">
+        <td>교과목 개요</td>
+      </button>
+      <button class="detailButton" data-modal="modal5" type="button">
+        <td>교육 목표</td>
+      </button>
+    </div></div>
 
     <section class="learning-process">
       <h2>학습 과정</h2>
@@ -191,12 +201,14 @@
       </table>
     </section>
 
+  
+
     <div class="modal" id="modal1" style="display: none">
       <div class="detailmodal">
         <h3>윤도운</h3>
-        <h4>소제목</h4>
-        <img src="" alt="자신을 대표하는 사진" />
-        <p>자기 소개 작성부탁</p>
+        <h4>20193066</h4>
+        <img src="images/윤도운 프로필사진.jpg" alt="자신을 대표하는 사진" />
+        <p><h2>소개</h2>"열정적인 자기 주도 학습자로, 언어와 기술에 대한 탐구와 깊은 관심을 가지고 있습니다. 문제 해결에 즐거움을 느끼며, 항상 새로운 도전을 통해 성장하는 것을 즐깁니다."</p>
         <button type="button" class="modalCloseButton" data-modal="modal1">
           Close
         </button>
@@ -206,9 +218,9 @@
     <div class="modal" id="modal2" style="display: none">
       <div class="detailmodal">
         <h3>박상훈</h3>
-        <h4>소제목</h4>
-        <img src="" alt="자신을 대표하는 사진" />
-        <p>자기 소개 작성부탁</p>
+        <h4>20193075</h4>
+        <img src="images/박상훈 프로필사진.jpg" alt="자신을 대표하는 사진" />
+        <p><h2>소개</h2>"커뮤니케이션 스킬을 강조하는 팀 플레이어로, 다양한 배경과 역할을 가진 사람들과 원활하게 협력하는 데 자신 있습니다. 긍정적인 에너지와 창의성을 통해 팀을 동기부여하고 효과적인 결과를 이끌어냅니다."</p>
         <button type="button" class="modalCloseButton" data-modal="modal2">
           Close
         </button>
@@ -218,10 +230,36 @@
     <div class="modal" id="modal3" style="display: none">
       <div class="detailmodal">
         <h3>신민철</h3>
-        <h4>소제목</h4>
-        <img src="" alt="자신을 대표하는 사진" />
-        <p>자기 소개 작성부탁</p>
+        <h4>20193062</h4>
+        <img src="images/신민철 프로필사진.jpg" alt="자신을 대표하는 사진" />
+        <p><h2>소개</h2>"문제 해결에 대한 열정과 끈기를 바탕으로, 현실적이고 실행 가능한 솔루션을 찾는 것을 좋아합니다. 새로운 아이디어를 받아들이고 발전시키는 것을 즐기며, 지속적인 개선을 통해 목표를 달성하는 것을 목표로 삼고 있습니다."
+        </p>
         <button type="button" class="modalCloseButton" data-modal="modal3">
+          Close
+        </button>
+      </div>
+    </div>
+
+    <div class="modal" id="modal4" style="display: none">
+      <div class="detailmodal">
+        <h3>교과목 개요</h3>
+        <p>"자바스크립트는 대부분 HTML에 포함되어서 다루었다. 자바스크립트는 CSS와 함께 HTM
+          L페이지를 예쁘게 만드는데 중점을 두었다. 그러나 2012년 Node.js가 출시되면서
+          모든 것이 변한 상태이다.비주얼 스튜디오 코드, 워드프레스 클라이언트, Atom 에디터
+          등이 모두 자바스크립트로 개발한 언어이다. 본 교과목은 그러므로 자바스크립트만 다루고 있다."</p>
+        <button type="button" class="modalCloseButton" data-modal="modal4">
+          Close
+        </button>
+      </div>
+    </div>
+
+    <div class="modal" id="modal5" style="display: none">
+      <div class="detailmodal">
+        <h3>교육 목표</h3>
+        <p>"HTML에 포함된 자바스크립트가 아닌, 서버 개발을 위한 자바스크립트 관점에서 자바스크립
+          트를 이해하는 것을 목표로 한다. 자바스크립트 기반을 배우과, 서버 자바스크립트, 클라이
+          언트 자바스크립트를 배운 이후 프로젝트를 수행한다"</p>
+        <button type="button" class="modalCloseButton" data-modal="modal5">
           Close
         </button>
       </div>
