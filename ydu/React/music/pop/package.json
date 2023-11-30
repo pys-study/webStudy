@@ -1,0 +1,13 @@
+{
+  "name": "pop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nice.js",
+  "scripts": {
+    "start": "node nice.js",
+    "test": "삭제함",
+    "show" : "node show.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
